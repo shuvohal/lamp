@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project lamp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hero">
+    <nav>
+        <img src="asset/menu.jpg" class="menu-img">
+        <img src="asset/vue.png" class="logo">
+        <ul>
+            <li><a href="">Lataest</a></li>
+            <li><a href="">Modern</a></li>
+            <li><a href="">countempry</a></li>
+            <li><a href="">dontesh</a></li>
+        </ul>
+        <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+    </nav>
+
+    
+    
+    <div class="lamp-container">
+        <img src="asset/2num.png" class="lamp">
+        <img src="asset/op.png" class="light" id="light">
+    </div>
+
+    <div class="text-container">
+        <h1>Latest <br> in lighting</h1>
+        <p>Hi! I am shuvo.this is my light company project .build very smotely.are you build more better</p>
+        <a href="">click all collection</a>
+        <div class="control">
+            <p>04</p>
+            <div class="line"><span></span></div>
+            <p>05</p>
+        </div>
+    </div>
+
+  </div> 
+  <script>
+    var btn =document.getElementById("btn");
+    var light =document.getElementById("light");
+    function toggleBtn(){
+        btn.classList.toggle("active");
+        light.classList.toggle("on");
+    }
+  </script>
+</body>
+</html>
